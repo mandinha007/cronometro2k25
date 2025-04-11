@@ -1,1 +1,0 @@
-# cronometro2k25
