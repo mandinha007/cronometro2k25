@@ -1,5 +1,5 @@
 const botoes = document.querySelectorAll(".botao");
-const textos= document.querySelectorAll(".aba-conteudo")
+const textos= document.querySelectorAll(".aba-conteudo");
 
 for(let i=0;i <botoes.length;i++){
  botoes[i].onclick = function(){
@@ -16,11 +16,15 @@ console.log(i);
 }
 
 const contadores = document.querySelectorAll(".contador");
-const tempoObjetivo1 = new Date("")
-const tempoObjetivo2 = new Date("")
-const tempoObjetivo3 = new Date("")
-const tempoObjetivo4 = new Date("")
-
+let tempoAtual = new Date ();
+const tempoObjetivo1 = new Date("2025-12-12T00:00:00") - tempoAtual;
+contadores[0].textContent = tempoObjetivo1;
+const tempoObjetivo2 = new Date("2025-12-31T00:00:00") - tempoAtual;
+contadores[1].textContent = tempoObjetivo2;
+const tempoObjetivo3 = new Date("2030-12-31T00:00:00") - tempoAtual;
+contadores[2].textContent = tempoObjetivo3;
+const tempoObjetivo4 = new Date("2035-05-05T00:00:00") - tempoAtual;
+contadores[3].textContent = tempoObjetivo4;
 
 
 
