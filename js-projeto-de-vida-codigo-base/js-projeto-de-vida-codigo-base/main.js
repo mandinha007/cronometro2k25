@@ -30,8 +30,17 @@ function calculaTempo(tempoObjetivo){
 let tempoAtual = new Date();
 let tempoFinal = tempoObjetivo - tempoAtual;
 let segundos = Math.floor (tempoFinal/1000);
-return segundos;
+let minutos = Match.floor (segundos/60);
+let horas = Match.floor (minutos/60);
+let dias = Match.floor (horas/24);
+let anos = Match.floor (dias/365);
 
+segundos %= 60;
+minutos %= 60;
+horas %= 24;
+dias %= 365;
+
+return anos + " Anos " + dias + " Dias " + horas + " Horas " + minutos + " Minutos " + segundos + " Segundos ";
 }
 
 
