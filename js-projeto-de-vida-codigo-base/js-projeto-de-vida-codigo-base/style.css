@@ -86,6 +86,12 @@ display: none;
         color: var(--verde);
         text-transform:uppercase ;
     }
+    .contador{
+    text-align: center;
+    font-size: 25 px;
+    text-transform: uppercase;
+    }
+
 @media  screen and (min-width: 768px) {
     .botoes {
         display: flex;
