@@ -23,7 +23,7 @@ const tempoObjetivo2 = new Date("2025-12-31T00:00:00");
 contadores[1].textContent = calculaTempo(tempoObjetivo2);
 const tempoObjetivo3 = new Date("2030-12-31T00:00:00");
 contadores[2].textContent = calculaTempo(tempoObjetivo3);
-const tempoObjetivo4 = new Date("2035-05-05T00:00:00");
+const tempoObjetivo4 = new Date("2035-05-26T00:00:00");
 contadores[3].textContent = calculaTempo(tempoObjetivo4);
 
 function calculaTempo(tempoObjetivo){
